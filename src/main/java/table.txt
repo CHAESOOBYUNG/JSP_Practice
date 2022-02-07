@@ -1,0 +1,8 @@
+create table bbs(
+    bno number(10) primary key,
+    title varchar2(300) not null,
+    writer varchar2(50) not null,
+    regdate date default sysdate,
+    content varchar2(2000) 
+);
+CREATE SEQUENCE BBS_SEQ INCREMENT BY 1 START WITH 1 NOCACHE;
